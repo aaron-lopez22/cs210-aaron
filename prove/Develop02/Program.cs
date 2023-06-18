@@ -29,37 +29,37 @@ class Program
             }
             menuUserInput = int.Parse(Console.ReadLine());
 
-            switch(menuUserInput)
+            switch (menuUserInput)
             {
                 case 1:
-                string prompt = promptGenerator.GetRandomPrompt();
-                Console.WriteLine(prompt);
-                Console.Write("> ");
-                string response = Console.ReadLine();
-                string date = DateTime.Now.Date.ToString("MMM dd, yyyy");
+                    string prompt = promptGenerator.GetRandomPrompt();
+                    Console.WriteLine(prompt);
+                    Console.Write("> ");
+                    string response = Console.ReadLine();
+                    string date = DateTime.Now.Date.ToString("MMM dd, yyyy");
 
-                Entry entry = new Entry(date, prompt, response);
-                journal.AddEntry(entry);
-                break;
+                    Entry entry = new Entry(date, prompt, response);
+                    journal.AddEntry(entry);
+                    break;
                 case 2:
                     journal.DisplayAll();
-                break;
+                    break;
                 case 3:
-                Console.WriteLine("Name of file to load? ");
-                string fileNameLoad = Console.ReadLine();
-                journal.LoadFromFile(fileNameLoad);
-                break;
+                    Console.WriteLine("Name of file to load? ");
+                    string fileNameLoad = Console.ReadLine();
+                    journal.LoadFromFile(fileNameLoad);
+                    break;
                 case 4:
-                Console.WriteLine("Name of file to save? ");
-                string fileNameSave = Console.ReadLine();
-                journal.SaveToFile(fileNameSave);
+                    Console.WriteLine("Name of file to save? ");
+                    string fileNameSave = Console.ReadLine();
+                    journal.SaveToFile(fileNameSave);
 
-                break;
+                    break;
 
             }
 
         }
 
-       
+
     }
 }
