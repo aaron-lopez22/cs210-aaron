@@ -16,6 +16,7 @@ class Program
             "3. Load",
             "4. Save",
             "5. Quit",
+            "6. Delete",
             "What would you like to do? "
         };
 
@@ -55,6 +56,11 @@ class Program
                     journal.SaveToFile(fileNameSave);
 
                     break;
+                case 6:
+                 Console.WriteLine("Name of file to delete? ");
+                    string fileNameDelete = Console.ReadLine();
+                    journal.DeleteFile(fileNameDelete);
+                break;
 
             }
 

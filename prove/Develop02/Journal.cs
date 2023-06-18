@@ -1,3 +1,4 @@
+using System.IO;
 public class Journal
 {
     List<Entry> entries;
@@ -44,5 +45,13 @@ public class Journal
 
             entries.Add(entry);
         }
+
+ 
+    }
+
+       public void DeleteFile (string file)
+    {
+        File.Delete(file);
+        Console.WriteLine("Deleted file successfully.");
     }
 }
