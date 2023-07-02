@@ -32,7 +32,7 @@ public string GetDisplayText()
    }
     else
     {
-        referenceDisplay = $"{book} {chapter}:{verse}";
+    referenceDisplay = $"{book} {chapter}:{verse}";
     }
    return referenceDisplay;
 }

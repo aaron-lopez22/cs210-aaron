@@ -19,8 +19,19 @@ class Scripture
     }
 
     public void HideRandomWords(int numberToHide)
-    {
+    {   
+        Random rand = new Random();
+        int wordCount = words.Count();
+        
 
+        int number = rand.Next(0, wordCount);
+        
+        for (int i = 0; i < numberToHide; i++)
+        {
+            words[number].Hide();
+        }
+
+      
     }
 
     public string GetDisplayText()
