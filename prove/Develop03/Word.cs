@@ -1,8 +1,8 @@
 class Word
 {
-    string text;
+    private string text;
 
-    bool isHidden;
+    private bool isHidden;
 
     public Word(string _text)
     {
