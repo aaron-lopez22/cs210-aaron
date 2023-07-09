@@ -4,7 +4,7 @@ public abstract class Shape
 
     public Shape(string color)
     {
-        _color = "";
+        _color = color;
     }
 
     public string GetColor()
