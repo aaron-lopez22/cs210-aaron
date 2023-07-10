@@ -30,7 +30,15 @@ class Program
             {
                 case 1:
                 BreathingActivity breathingActivity = new BreathingActivity();
-                breathingActivity.Run()
+                breathingActivity.Run();
+                break;
+                case 2:
+                ReflectingActivity reflectingActivity = new ReflectingActivity();
+                reflectingActivity.Run();
+                break;
+                case 3:
+                ListingActivity listingActivity = new ListingActivity();
+                listingActivity.Run();
                 break;
             }
         }
